@@ -21,6 +21,8 @@ set hlsearch
 set wildmenu
 call plug#begin()
 Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
@@ -54,5 +56,6 @@ let g:mkdp_auto_start = 0
 let g:mkdp_auto_close = 1
 let g:mkdp_refresh_slow = 0
 let g:airline_theme='base16_gruvbox_dark_hard'
+autocmd FileType apache setlocal commentstring=#\ %s
 map <C-o> :NERDTreeToggle<CR>
 map <C-e> :Files<CR>
