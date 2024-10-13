@@ -1,3 +1,4 @@
+set clipboard=unnamed
 set encoding=utf8
 let mapleader=" "
 set relativenumber
